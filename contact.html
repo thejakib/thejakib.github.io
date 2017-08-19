@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Contact - Global Exporters &amp; Importers</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./contact.css" />
+    <script>
+        function validateform() {
+            //alert("yo");
+            //return false;
+
+            var email = document.forms["enquiryform"]["email"];
+            var atpos = email.value.indexOf("@");
+            var dotpos = email.value.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.value.length) {
+                alert("Invalid E-Mail Address.\nPlease provide a Valid E-Mail");
+                email.focus();
+                return false;
+            }
+
+            var name = document.forms["enquiryform"]["name"];
+            name.value = name.value.trim();
+            if (name.value == "" || name.value == "Name?") {
+                alert("Please provide your Name in Enquiry.");
+                name.focus();
+                return false;
+            }
+
+            var desc = document.forms["enquiryform"]["description"];
+            desc.value = desc.value.trim();
+            if (desc.value == "" || desc.value == "Describe your Enquiry in details.") {
+                alert("Please Describe your Enquiry.");
+                desc.focus();
+                return false;
+            }
+
+            var mob = document.forms["enquiryform"]["mobile"];
+            mob.value = mob.value.trim();
+            if (mob.value == "" || mob.value == "Mobile Number?") {
+                alert("Please give a Mobile Number so that We can contact you.");
+                mob.focus();
+                return false;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1 id="heading_text">
+                <a href="/">
+            Gl<img src="images/globe2.png" width="80px"/>bal Exporters &amp; Importers
+                    </a>
+            </h1>
+            <div id="Navbar">
+                <nav>
+                    <a href="index.html">
+                        <div>Home</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="catalog/index.html">
+                        <div>Catalog</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="contact.html">
+                        <div>Contact</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="aboutus.html">
+                        <div>About Us</div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="form">
+                <form name="enquiryform" action="enquiry.php" onsubmit="return validateform()" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th><span class="must">*</span> Email</th>
+                                <td>:</td>
+                                <td><input type="text" name="email" value="Email?" onfocus="if (this.value=='Email?') {this.style.color='black'; this.value=''}" onblur="if (this.value=='') {this.style.color='lightgrey'; this.value='Email?'}" style="color:lightgrey" /></td>
+                            </tr>
+                            <tr>
+                                <th><span class="must">*</span> Name</th>
+                                <td>:</td>
+                                <td><input type="text" name="name" value="Name?" onfocus="if (this.value=='Name?') {this.style.color='black'; this.value=''}" onblur="if (this.value=='') {this.style.color='lightgrey';this.value='Name?'}" style="color:lightgrey" /></td>
+                            </tr>
+                            <tr>
+                                <th>Company Name</th>
+                                <td>:</td>
+                                <td><input type="text" name="compname" /></td>
+                            </tr>
+                            <tr>
+                                <th><span class="must">*</span> Description</th>
+                                <td>:</td>
+                                <td><textarea name="description" id="description" onfocus="if (this.value=='Describe your Enquiry in details.') {this.style.color='black'; this.value='';}" onblur="if (this.value=='') {this.style.color='lightgrey';this.value='Describe your Enquiry in details.';}" style="color:lightgrey">Describe your Enquiry in details.</textarea></td>
+                            </tr>
+                            <tr>
+                                <th><span class="must">*</span> Mobile</th>
+                                <td>:</td>
+                                <td><input type="text" name="mobile" value="Mobile Number?" onfocus="if (this.value=='Mobile Number?') {this.style.color='black'; this.value=''}" onblur="if (this.value=='') {this.style.color='lightgrey'; this.value='Mobile Number?'}" style="color:lightgrey" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><input type="submit" name="Submit" value="Send Enquiry" id="submit" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <div id="table" itemscope itemtype="http://schema.org/Organization">
+                <table id="contact">
+                    <tbody>
+                        <tr>
+                            <th>General Manager</th>
+                            <td>:</td>
+                            <td>Sheikh Mohiuddin</td>
+                        </tr>
+                        <tr class="gap"></tr>
+                        <tr>
+                            <th>Marketing Manager</th>
+                            <td>:</td>
+                            <td>Tuhin Suvra Sen</td>
+                        </tr>
+                        <tr class="gap"></tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>:</td>
+                            <td>
+                                <p>
+                                    <b><span itemprop="name">Global Exporters &amp; Importers</span></b>
+                                    <br/>
+                                    <br/>
+                                    <span itemprop="address">8/1 R.L. Ghosh Road,
+                                    <br/>Budge Budge,
+                                    <br/>Kolkata -700137,
+                                    <br/>West Bengal,
+                                    <br/>India
+                                </span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="gap"></tr>
+                        <tr>
+                            <th>Mobile</th>
+                            <td>:</td>
+                            <td><a href="tel:+919331022673" style="text-decoration:underline;"><span itemprop="telephone">(+91)-9331022673</span></a> (General Manager)<br/><br/><a href="tel:+919062704124" style="text-decoration:underline;">(+91)-9062704124</a> (Marketing Manager)</td>
+                        </tr>
+                        <tr class="gap"></tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td><a href="mailto:globalexpt@gmail.com" target="_blank" style="text-decoration:underline;">globalexpt@gmail.com</a></td>
+                        </tr>
+                        <tr class="gap"></tr>
+                        <tr>
+                            <th>Website Designer</th>
+                            <td>:</td>
+                            <td><a href="https://www.facebook.com/johev09" target="_blank">Sheikh Jhohev</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="footer">
+            © Global Exporters &amp; Importers, India
+        </div>
+
+    </div>
+</body>
+
+</html>

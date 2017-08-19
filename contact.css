@@ -1,0 +1,173 @@
+div#content {
+    text-align:center;
+    
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+    
+    background:rgba(255, 255, 255, 0.95);    
+    border-radius:20px;
+    border:2px solid #009d24;
+}
+
+
+div#form {
+    margin:auto;
+    padding:0;
+    
+    text-align:center;
+    
+    width:60%;
+}
+div#form form {
+    text-align:center;
+    
+    width:100%;
+}
+div#form form table {
+    margin:auto;
+    margin-top:20px;
+    
+    text-align:center;
+    
+    width:100%;
+}
+div#form form table th,td:nth-child(2) {
+    
+}
+div#form form table tr td,th {
+    padding-top:5px;
+    padding-bottom:5px;
+    
+    margin:auto;
+}
+div#form form table tr th {
+    text-align:center;
+    vertical-align:text-top;
+    width:45%;
+}
+div#form form table tr td:nth-child(2) {
+    text-align:center;
+    vertical-align:text-top;    
+    width:5%;
+}
+div#form form table tr:not(:last-child) td:last-child {
+    text-align:left;
+    width:50%;
+}
+span.must {
+    color:red;
+}
+input[type="text"],input[type="email"] {
+    width:100%;
+    font-family:monospace;
+    height:30px;
+    
+    padding:5px;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+textarea#description {
+    width:100%;
+    height: 100px;
+    resize: none;
+    
+    padding:5px;
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    
+    border:0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    
+    width:140px;
+    height:35px;
+    
+    margin-top:20px;
+    margin-bottom:10px;
+    
+    font-family:Century Gothic;
+    font-size:16px;
+    font-weight:lighter;
+    color:#848484;
+    
+    -webkit-transition:all 0.25s linear;
+    -moz-transition:all 0.25s linear;
+    -ms-transition:all 0.25s linear;
+    -o-transition:all 0.25s linear;
+    transition:all 0.25s linear;
+    
+    background:#e2e2e2;
+}
+input[type=submit]:hover {
+    
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+div#table {
+    padding:20px; 
+}
+table#contact {
+    margin:auto;
+    width:60%;
+    
+    font-family:sans-serif;
+    
+    border-spacing:0;
+    //border-collapse: collapse;
+}
+
+table#contact th {
+    border:2px solid rgba(0, 128, 0, 0.25);
+    border-right-width:0px;
+    border-radius:5px 0px 0px 5px;
+}
+table#contact td:nth-child(2) {
+    border:2px solid rgba(0, 128, 0, 0.25);
+    border-left-width:0px;
+    border-right-width:0px;    
+}
+table#contact td:last-child {
+    border:2px solid rgba(0, 128, 0, 0.25);
+    border-left-width:0px;
+    border-radius:0px 5px 5px 0px;
+}
+
+table#contact tr.gap {
+    height:20px;
+}
+
+
+table#contact tr {
+    display:table-row;    
+    vertical-align:text-top;
+}
+table#contact tr th {
+    text-align:center;
+    width:45%;
+}
+table#contact tr td:nth-child(2) {
+    text-align:center;
+    width:5%;
+}
+table#contact tr td:last-child {
+    text-align:left;
+    width:50%;
+}
+table#contact tr th,td {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+table#contact tr td p {
+    padding:0;
+    margin:0;
+}

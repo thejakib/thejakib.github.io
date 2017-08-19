@@ -1,0 +1,9 @@
+bigrock Nameservers
+
+ns1.plesk-web26.webhostbox.net
+ns2.plesk-web26.webhostbox.net
+
+000webhost.com nameserver
+
+ns01.000webhost.com
+ns02.000webhost.com

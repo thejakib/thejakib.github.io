@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Global Exporters &amp; Importers</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <meta name="Keywords" content="globaljutebags, Jute, Jute Bags, Cotton, Cotton Bags, Non-Woven, Non-Woven Bags, Jute Cotton Bags, Jute Cotton Non-Woven Bags" />
+    <meta name="description" content="Leading Manufacturer & Exporter of Jute, Cotton and Non-Woven Bags" />
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1 id="heading_text">
+                <a href="/">Gl<img src="images/globe2.png" width="80px"/>bal Exporters &amp; Importers</a>
+            </h1>
+            <div id="Navbar">
+                <nav>
+                    <a href="./">
+                        <div>Home</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="./catalog/index.html">
+                        <div>Catalog</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="contact.html">
+                        <div>Contact</div>
+                    </a>
+                    <!--
+                        -->
+                    <a href="aboutus.html">
+                        <div>About Us</div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="home_image">
+
+                <img class="polaroid left-most" src="images/himg1.jpg" width="300px" alt="himg1" />
+
+                <img class="polaroid left-most delete-after-load" src="images/himg6.jpg" width="300px" alt="himg6" />
+                <img class="polaroid left-most delete-after-load" src="images/himg7.jpg" width="300px" alt="himg7" />
+                <img class="polaroid left-most delete-after-load" src="images/himg8.jpg" width="300px" alt="himg8" />
+                <img class="polaroid left-most delete-after-load" src="images/himg3.jpg" width="300px" alt="himg9" />
+
+                <img class="polaroid rotate-left" src="images/himg2.jpg" width="300px" alt="himg2" />
+
+                <img class="polaroid rotate-none" src="images/himg9.jpg" width="300px" alt="himg3" />
+
+                <img class="polaroid rotate-right" src="images/himg4.jpg" width="300px" alt="himg4" />
+
+                <img class="polaroid right-most" src="images/himg5.jpg" width="300px" alt="himg5" />
+
+            </div>
+
+            <div id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    Backed by immense industry experience and state-of-the art infrastructure, our company has emerged as a premium name in the <span class="emphasis">Jute, Cotton, Canvas and Non Woven Bags</span> Industry. The exhaustive range of outstanding products offered by us includes Jute Six Bottle Wine Bags, Jute Wine Bottle Bags, Fashion Jute Bags, Designer Jute Bags, Jute Shopping Bags and Pouches. We are also involved in the manufacturing of a formidable array of Printed Canvas Bags, Cotton Canvas Bags, Jute Canvas Bags, and Canvas Shopping Bags. High quality Non woven Carry Bags, Stylish Non Woven Bags, Jute Cotton Bags and Cotton Ladies Bags can also be procured from us.
+                </p>
+                <p>
+                    <span class="emphasis">Eco friendly</span> and versatile in use, these Bags are widely popular in the market. The jute used as raw material is procured from reliable and well known sources. We have an advanced infrastructure, equipped with the latest machinery and technology. More than 100 Skill labor and experts are involved in the production process are highly experienced and adept professionals. We offer a innovative range of Jute Cotton and Non Woven Bags that are not only utilitarian but also serve as decorative products. To ensure the quality of these, we have employed a special Team of Auditors, which conducts stringent tests at all stages of the production. The quality parameters comply with international standards, which ensures that only high grade jute bags are offered to the customers.</p>
+
+                <p class="last-p">We are looking for your export queries.</p>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            © Global Exporters &amp; Importers, India
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var imgPath = 'images/';
+        var array_images = ["himg6.jpg", "himg7.jpg", "himg8.jpg", "himg3.jpg"];
+
+        function changepic() {
+
+            $imgdiv = $("div#home_image");
+
+            var imgindex = Math.floor(Math.random() * $imgdiv.children().length); //img to be fadedout
+            var imgsrcindex = Math.floor(Math.random() * array_images.length); //new img src going to be shown
+
+            var $fadeout = $imgdiv.children().eq(imgindex); //select random img from div which will be faded out
+            var src = imgPath + array_images[imgsrcindex];
+            var $fadein = $("<img class='" + $fadeout.attr("class") + "' src='" + src + "' width='300px'/>");
+
+            $($fadein).insertAfter($fadeout);
+
+            var zindex = $fadeout.css("z-index");
+
+            $fadein.css({
+                    opacity: 0.0,
+                    "z-index": zindex
+                })
+                .animate({
+                        opacity: 1.0
+                    }, 750,
+                    function() {
+                        var imgSrc = array_images[imgsrcindex];
+                        array_images.splice(imgsrcindex, 1); //remove the src of picture shown
+                        array_images.push(imgSrc); //add the src of picture just now faded out
+                        $fadeout.remove();
+                        setTimeout(changepic, 3000);
+                    });
+        }
+
+        $(document).ready(
+            function() {
+                $("img.delete-after-load").remove();
+                setTimeout(changepic, 3000);
+            });
+
+    </script>
+</body>
+
+</html>

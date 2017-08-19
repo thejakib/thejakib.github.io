@@ -1,0 +1,81 @@
+div#content {
+    text-align:center;
+    
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+    
+    background:rgba(255, 255, 255, 0.95);    
+    border-radius:20px;
+    border:2px solid #009d24;
+    
+    padding-top:10px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom:50px;
+    
+    font-family:'Roboto',sans-serif;
+    letter-spacing: 0.01em;    
+}
+
+div#about h1{
+    border-bottom:2px solid rgba(0, 128, 0, 0.50); /*UNDERLINE BORDER*/
+    
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    
+    padding-bottom:5px;
+    font-weight: 300;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+div#table {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+table#fact {
+    margin:auto;
+    width:60%;
+    
+    border:2px dashed green;
+    border-radius:20px;
+}
+table#fact tr {
+    display:table-row;    
+    vertical-align:text-top;
+}
+table#fact tr th {
+    text-align:center;
+    width:45%;
+}
+table#fact tr td:nth-child(2) {
+    text-align:center;
+    width:5%;
+}
+table#fact tr td:last-child {
+    text-align:left;
+    width:50%;
+}
+table#fact tr th,td {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+div#about p,ul{
+    text-align:justify;
+    
+    font-size:18px;    
+}
+div#about ul {
+    list-style-type:disc;
+}
+
+div.para h2 {
+    padding-top:20px;
+    padding-bottom:10px;
+    text-align:left;
+    border-bottom:2px solid rgba(0, 128, 0, 0.25);
+}
+

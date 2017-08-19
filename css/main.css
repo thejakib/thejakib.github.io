@@ -1,0 +1,119 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto);*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    /*background-color:rgb(101, 214, 101);*/
+    background: url("../images/bg.jpg");
+    /*background-size:auto auto;*/
+}
+
+div#header {
+    text-align:center;
+    
+    border-radius:10px;
+    /*border:2px solid #009d24;*/
+    
+    margin:20px auto 0px auto;
+}
+h1#heading_text {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    background: rgba(25, 132, 0, 0.5);
+    
+    font-size: 5.5em;
+    line-height: 1.5em;
+    font-family: 'Lato',sans-serif;
+    
+    color:rgb(255, 255, 255);
+    
+    font-style:normal;
+    font-weight:300;
+    
+    text-decoration:none;
+    
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    display: block;
+}
+h1#heading_text img{
+    position:relative;
+    top:5px;
+}
+
+/* A link modifications (Color remains same after visited)*/
+a:link {
+    color:inherit;
+}
+a:visited {
+    color:inherit;
+}
+a {
+    text-decoration:none;
+}
+
+/* NAVIGATION BAR CSS*/
+#Navbar nav {
+    font-size: 0.95em;
+    font-family: Arial;
+    font-weight:bold;
+    
+    margin-top:40px;
+    margin-bottom:10px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5)
+}
+#Navbar nav div {
+    width: 150px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5);
+}
+#Navbar nav a:first-child div {
+    border-radius: 5px 0px 0px 5px;
+}
+#Navbar nav a:last-child div {
+    border-radius: 0px 5px 5px 0px;
+}
+#Navbar nav a div {
+    color:rgb(0, 110, 178);
+    
+    background: rgb(65, 209, 252);
+
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#Navbar nav a div:hover {    
+    background: rgb(0, 177, 255);
+    color:white;
+}
+
+
+
+
+div#footer {
+    margin-top:20px;
+    
+    clear: both;
+    position: relative;
+    z-index: 10;
+    
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    
+    line-height:40px;
+    vertical-align:middle;
+    
+    text-align:center;
+        
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+    background: rgba(25, 132, 0, 0.85);
+    color: white;
+}
